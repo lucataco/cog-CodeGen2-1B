@@ -1,0 +1,14 @@
+# This is a configuration file for Cog, a tool for building and deploying machine learning models.
+build:
+  gpu: true
+  cuda: "11.7"
+  python_version: "3.10"
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_packages:
+    - "torch==1.13.1"
+    - "transformers==4.30.2"
+
+# The predict.py file contains the Predictor class with setup and predict methods.
+predict: "predict.py:Predictor"
